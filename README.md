@@ -77,7 +77,7 @@ All templates incorporate Web3-related design elements:
 
 1. **Clone this repository**
 ```bash
-git clone https://github.com/your-username/web3-templates.git
+git clone https://github.com/HEXAUX/web3-templates.git
 cd web3-templates
 ```
 
@@ -96,21 +96,25 @@ web3-templates/
 ├── template-1-terminal/
 │   ├── index.html
 │   ├── style.css
+│   ├── preview.png
 │   └── README.md
 ├── template-2-cyberpunk/
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
+│   ├── preview.png
 │   └── README.md
 ├── template-3-matrix/
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
+│   ├── preview.png
 │   └── README.md
 ├── template-4-blockchain/
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
+│   ├── preview.png
 │   └── README.md
 └── README.md
 ```
