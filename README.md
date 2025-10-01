@@ -119,22 +119,6 @@ web3-templates/
 └── README.md
 ```
 
-## 🛠️ Tech Stack
-
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling (Grid, Flexbox, Animations)
-- **JavaScript** - Vanilla JS, no framework dependencies
-- **Canvas API** - Dynamic graphics rendering
-
-## 💡 Use Cases
-
-These templates are perfect for:
-- 🪙 Cryptocurrency project websites
-- 🎮 NFT marketplace platforms
-- ⛓️ Blockchain explorers
-- 💼 DeFi application interfaces
-- 🎨 Web3 personal portfolios
-- 🚀 Decentralized applications (DApps)
 
 ## ✨ Customization
 
@@ -174,10 +158,6 @@ MIT License - Free to use, please retain original author information
 ## 🌟 Star History
 
 If this project helps you, please give it a Star ⭐️
-
-## 📞 Contact
-
-Questions or suggestions? Feel free to open an Issue!
 
 ---
 
