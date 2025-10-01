@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Visualizer - 區塊鏈視覺化</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="particles"></div>
+    </div>
+
+    <header class="main-header">
+        <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 40 40">
+                <path d="M20 5 L35 12.5 L35 27.5 L20 35 L5 27.5 L5 12.5 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="20" cy="20" r="5" fill="currentColor"/>
+            </svg>
+            <span>BLOCKCHAIN</span>
+        </div>
+        <nav>
+            <a href="#blocks">Blocks</a>
+            <a href="#transactions">Transactions</a>
+            <a href="#network">Network</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Blockchain Network Visualizer</h1>
+            <p class="subtitle">Real-time blockchain data visualization</p>
+            <div class="network-stats">
+                <div class="stat">
+                    <div class="stat-icon">⛓️</div>
+                    <div class="stat-info">
+                        <div class="stat-label">Total Blocks</div>
+                        <div class="stat-value" id="totalBlocks">0</div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-info">
+                        <div class="stat-label">TPS</div>
+                        <div class="stat-value" id="tps">0</div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <div class="stat-label">Active Nodes</div>
+                        <div class="stat-value" id="activeNodes">0</div>
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="stat-icon">💰</div>
+                    <div class="stat-info">
+                        <div class="stat-label">Market Cap</div>
+                        <div class="stat-value" id="marketCap">$0</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blockchain-visual">
+            <h2>Blockchain Chain</h2>
+            <div class="chain-container" id="chainContainer">
+                <!-- Blocks will be added here dynamically -->
+            </div>
+            <button class="add-block-btn" onclick="addNewBlock()">
+                <span>+</span> Mine New Block
+            </button>
+        </section>
+
+        <section class="info-grid">
+            <div class="info-card">
+                <h3>Latest Block</h3>
+                <div class="block-info" id="latestBlock">
+                    <div class="info-row">
+                        <span class="label">Block #:</span>
+                        <span class="value">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Hash:</span>
+                        <span class="value hash">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Timestamp:</span>
+                        <span class="value">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Transactions:</span>
+                        <span class="value">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3>Network Activity</h3>
+                <div class="activity-chart">
+                    <canvas id="activityChart"></canvas>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3>Recent Transactions</h3>
+                <div class="transactions-list" id="transactionsList">
+                    <div class="transaction-item">
+                        <div class="tx-from">0x742d...3f5A</div>
+                        <div class="tx-arrow">→</div>
+                        <div class="tx-to">0x9B3c...8E2d</div>
+                        <div class="tx-amount">0.5 ETH</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <p>Powered by Web3 Technology | Decentralized & Secure</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

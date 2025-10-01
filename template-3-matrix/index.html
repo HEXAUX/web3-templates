@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix - 駭客帝國風格</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+
+    <div class="overlay">
+        <div class="terminal-window">
+            <div class="window-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="window-title">matrix.exe</span>
+            </div>
+            <div class="window-body">
+                <div class="boot-sequence">
+                    <p class="boot-line">Initializing Matrix Protocol v3.14...</p>
+                    <p class="boot-line delay-1">Loading Neural Network...</p>
+                    <p class="boot-line delay-2">Connecting to Mainframe...</p>
+                    <p class="boot-line delay-3 success">✓ Connection Established</p>
+                </div>
+
+                <div class="main-content">
+                    <h1 class="matrix-title">
+                        <span class="glow">WELCOME TO THE MATRIX</span>
+                    </h1>
+
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-label">NODES ONLINE</div>
+                            <div class="stat-value" data-target="1337">0</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">BLOCKS MINED</div>
+                            <div class="stat-value" data-target="9999">0</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">HASH RATE</div>
+                            <div class="stat-value"><span data-target="420">0</span> TH/s</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">NETWORK STATUS</div>
+                            <div class="stat-value pulse">ACTIVE</div>
+                        </div>
+                    </div>
+
+                    <div class="command-section">
+                        <div class="command-prompt">
+                            <span class="prompt-symbol">neo@matrix:~$</span>
+                            <input type="text" class="command-input" placeholder="enter command..." autofocus>
+                        </div>
+                        <div class="command-output">
+                            <p class="output-line">> System Status: Operational</p>
+                            <p class="output-line">> Firewall: Active</p>
+                            <p class="output-line">> Encryption: Enabled</p>
+                            <p class="output-line success">> Ready for input...</p>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="matrix-btn" onclick="hackEffect()">
+                            <span>INITIATE SEQUENCE</span>
+                        </button>
+                        <button class="matrix-btn secondary" onclick="clearTerminal()">
+                            <span>CLEAR LOG</span>
+                        </button>
+                        <button class="matrix-btn danger" onclick="disconnectEffect()">
+                            <span>DISCONNECT</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <div class="info-item">
+                <span class="info-label">IP ADDRESS:</span>
+                <span class="info-value">192.168.1.42</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">ENCRYPTION:</span>
+                <span class="info-value">AES-256</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">PROTOCOL:</span>
+                <span class="info-value">BLOCKCHAIN</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

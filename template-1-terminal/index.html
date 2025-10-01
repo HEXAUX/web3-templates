@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="matrix-bg"></div>
+    <div class="grid-overlay"></div>
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <span class="logo-bracket">[</span>
+                    <span class="logo-text">0x</span>
+                    <span class="logo-name">PORTFOLIO</span>
+                    <span class="logo-bracket">]</span>
+                </div>
+                <div class="nav-right">
+                    <div class="network-status" id="networkStatus">
+                        <span class="status-dot"></span>
+                        <span class="status-text">DISCONNECTED</span>
+                    </div>
+                    <button class="connect-wallet" id="connectWallet">
+                        <span class="wallet-icon">⟨/⟩</span>
+                        <span>CONNECT_WALLET</span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">system@web3:~$</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">root@blockchain:~$</span>
+                            <span class="command typing-text">whoami</span>
+                        </div>
+                        <div class="terminal-output">
+                            <div class="glitch-text" data-text="BLOCKCHAIN_DEVELOPER">BLOCKCHAIN_DEVELOPER</div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="tech-title">
+                    <span class="bracket">&lt;</span>
+                    Building the Decentralized Future
+                    <span class="bracket">/&gt;</span>
+                </h1>
+                <p class="subtitle">
+                    <span class="code-comment">// Full Stack Web3 Engineer</span>
+                </p>
+                <div class="ascii-art">
+                    ┌─────────────────────────────────────┐<br>
+                    │ Smart Contracts │ DApps │ Protocols │<br>
+                    └─────────────────────────────────────┘
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span class="btn-prefix">$</span> explore --projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span class="btn-prefix">></span> contact.init()
+                    </a>
+                </div>
+            </section>
+
+            <section id="about" class="section">
+                <h2 class="section-title">
+                    <span class="section-prefix">// </span>SYSTEM.INFO
+                </h2>
+                <div class="card code-block">
+                    <pre class="code-display">
+<span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Web3 Builder"</span>,
+  <span class="code-property">focus</span>: [
+    <span class="code-string">"Smart Contracts"</span>,
+    <span class="code-string">"DeFi Protocols"</span>,
+    <span class="code-string">"Decentralized Apps"</span>
+  ],
+  <span class="code-property">mission</span>: <span class="code-string">"Building the future of internet, one block at a time"</span>
+};
+                    </pre>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-label">PROJECTS_DEPLOYED</div>
+                            <div class="stat-number">
+                                <span class="hex-prefix">0x</span>05
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">LINES_OF_CODE</div>
+                            <div class="stat-number">
+                                <span class="hex-prefix">0x</span>2710
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">YEARS_EXPERIENCE</div>
+                            <div class="stat-number">
+                                <span class="hex-prefix">0x</span>03
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2 class="section-title">
+                    <span class="section-prefix">$ </span>ls -la ./projects
+                </h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-number">[01]</span>
+                            <span class="project-status">● DEPLOYED</span>
+                        </div>
+                        <h3 class="project-title">
+                            <span class="code-keyword">contract</span> DeFiProtocol
+                        </h3>
+                        <p class="project-desc">
+                            <span class="code-comment">// Decentralized finance platform for lending & borrowing</span>
+                        </p>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Language:</span>
+                                <span class="meta-value">Solidity ^0.8.0</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Chain:</span>
+                                <span class="meta-value">Ethereum</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">#Solidity</span>
+                            <span class="tag">#DeFi</span>
+                            <span class="tag">#Lending</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-number">[02]</span>
+                            <span class="project-status">● ACTIVE</span>
+                        </div>
+                        <h3 class="project-title">
+                            <span class="code-keyword">contract</span> NFTMarketplace
+                        </h3>
+                        <p class="project-desc">
+                            <span class="code-comment">// Platform for creating and trading digital art NFTs</span>
+                        </p>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Frontend:</span>
+                                <span class="meta-value">React + Web3.js</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Storage:</span>
+                                <span class="meta-value">IPFS</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">#NFT</span>
+                            <span class="tag">#ERC721</span>
+                            <span class="tag">#IPFS</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-number">[03]</span>
+                            <span class="project-status">● DEPLOYED</span>
+                        </div>
+                        <h3 class="project-title">
+                            <span class="code-keyword">contract</span> DAOGovernance
+                        </h3>
+                        <p class="project-desc">
+                            <span class="code-comment">// Decentralized autonomous organization governance system</span>
+                        </p>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Consensus:</span>
+                                <span class="meta-value">Token Voting</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Standard:</span>
+                                <span class="meta-value">ERC20 + Governor</span>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">#DAO</span>
+                            <span class="tag">#Governance</span>
+                            <span class="tag">#Voting</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <h2 class="section-title">
+                    <span class="section-prefix">></span> techStack.query()
+                </h2>
+                <div class="tech-grid">
+                    <div class="tech-category">
+                        <h3 class="category-title">
+                            <span class="category-icon">▸</span> Smart Contracts
+                        </h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <span class="tech-bullet">●</span> Solidity
+                                <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-bullet">●</span> Hardhat
+                                <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-bullet">●</span> OpenZeppelin
+                                <div class="progress-bar"><div class="progress-fill" style="width: 80%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3 class="category-title">
+                            <span class="category-icon">▸</span> Blockchain
+                        </h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <span class="tech-bullet">●</span> Ethereum
+                                <div class="progress-bar"><div class="progress-fill" style="width: 95%"></div></div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-bullet">●</span> Web3.js / Ethers.js
+                                <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-bullet">●</span> IPFS
+                                <div class="progress-bar"><div class="progress-fill" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h3 class="category-title">
+                            <span class="category-icon">▸</span> Frontend
+                        </h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <span class="tech-bullet">●</span> React / Next.js
+                                <div class="progress-bar"><div class="progress-fill" style="width: 88%"></div></div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-bullet">●</span> TypeScript
+                                <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-bullet">●</span> Tailwind CSS
+                                <div class="progress-bar"><div class="progress-fill" style="width: 80%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <h2 class="section-title">
+                    <span class="section-prefix">></span> connect.execute()
+                </h2>
+                <div class="card code-block">
+                    <pre class="code-display">
+<span class="code-keyword">function</span> <span class="code-function">initConnection</span>() {
+  <span class="code-keyword">return</span> {
+    <span class="code-property">github</span>: <span class="code-string">"github.com/username"</span>,
+    <span class="code-property">twitter</span>: <span class="code-string">"@username"</span>,
+    <span class="code-property">discord</span>: <span class="code-string">"username#0000"</span>,
+    <span class="code-property">email</span>: <span class="code-string">"hello@web3.dev"</span>
+  };
+}
+                    </pre>
+                    <div class="contact-grid">
+                        <a href="#" class="contact-link">
+                            <span class="link-icon">&gt;&gt;</span>
+                            <span class="link-label">GitHub</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <span class="link-icon">&gt;&gt;</span>
+                            <span class="link-label">Twitter</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <span class="link-icon">&gt;&gt;</span>
+                            <span class="link-label">Discord</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <span class="link-icon">&gt;&gt;</span>
+                            <span class="link-label">Email</span>
+                            <span class="link-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <span class="footer-label">STATUS:</span>
+                    <span class="footer-value" id="walletAddress">DISCONNECTED</span>
+                </div>
+                <div class="footer-section">
+                    <span class="footer-label">BLOCK:</span>
+                    <span class="footer-value" id="blockNumber">0x0</span>
+                </div>
+                <div class="footer-section">
+                    <span class="footer-label">© 2024</span>
+                    <span class="footer-value">BUILT_ON_CHAIN</span>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <div class="bar-segment"></div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
